@@ -1,5 +1,6 @@
 module.exports = {
   content: ["./public/**/*.{html,js}"],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -15,6 +16,12 @@ module.exports = {
         "btn-cta-h": "rgba(0, 0, 155, 1)",
         "btn-second": "rgba(221, 221, 221, 1)",
         "btn-second-h": "rgba(182, 182, 182, 1)",
+      },
+      backgroundImage: {
+        header: "linear-gradient(to bottom right, #343e97, #1100ff)",
+        "header-dark": "linear-gradient(to bottom right, #161616, #191919)",
+        section: "linear-gradient(to bottom right, #1100ff, #2b52fd)",
+        "section-dark": "linear-gradient(to bottom right, #0f121e, #141414)",
       },
     },
   },

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 
 <head>
     <meta charset="UTF-8" />
@@ -21,15 +21,15 @@
     </style>
 </head>
 
-<body class="w-full bg-white">
+<body class="dark:bg-black w-full bg-white">
     <header
-        class="m-0 p-0 w-full h-16 bg-gradient-to-br from-[#343e97] to-[#1100ff] sticky top-0 box-border overflow-hidden flex flex-row justify-between items-center">
+        class="dark:bg-header-dark m-0 p-0 w-full h-16 bg-header sticky top-0 box-border overflow-hidden flex flex-row justify-between items-center bg-green-500">
         <div id="logo" class="m-0 py-0 pr-0 pl-24 h-16">
             <h1 class="text-4xl leading-[4rem] text-white cursor-pointer select-none">
                 Our.Faith
             </h1>
         </div>
-        <nav class="my-auto mx-0 py-0 pr-24 p-0 h-16">
+        <nav class="my-auto mx-0 py-0 pr-24 pl-0 h-16">
             <ul>
                 <li class="my-0 pr-0 pl-5 leading-[4rem] inline-block cursor-default list-none">
                     <a href="#beranda"
@@ -48,6 +48,17 @@
                     <a href="#kontak"
                         class="text-base text-white-third leading-[4rem] hover:text-white-second hover:font-bold">Kontak</a>
                 </li>
+                <li class="my-0 pr-0 pl-5 leading-[4rem] inline-block cursor-default list-none">
+                    <div class="flex justify-center">
+                        <span class="text-sm text-slate-50">Light</span>
+                        <input type="checkbox" id="toogle" name="toggle" class="hidden" />
+                        <label for="toogle"
+                            class="mx-2 p-0 w-9 h-5 bg-slate-500 rounded-full flex items-center cursor-pointer">
+                            <div id="toggle-circle" class="w-5 h-5 bg-white rounded-full"></div>
+                        </label>
+                        <span class="text-sm text-slate-50">Dark</span>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
@@ -60,10 +71,10 @@
                     class="featured-jumbotron w-full object-cover object-center" />
             </div>
             <div id="sec-ket-jumbotron" class="m-0 py-1 px-7 basis-3/5 box-border overflow-hidden text-left">
-                <h2 class="mb-1 no-underline text-black text-4xl font-bold">
+                <h2 class="dark:text-slate-50 mb-1 no-underline text-black text-4xl font-bold">
                     Perdalam ilmu, kuatkan iman, tingkatkan taqwa
                 </h2>
-                <h4 class="mb-7 no-underline text-[#504f4f] text-xl font-normal">
+                <h4 class="dark:text-slate-400 mb-7 no-underline text-[#504f4f] text-xl font-normal">
                     Solusi untuk diri menuju pribadi yang lebih baik dengan Doa Hafalan,
                     ayat Al-Qur'an dan Hadits, serta ceramah para ulama.
                 </h4>
@@ -81,7 +92,7 @@
         </div>
 
         <div id="content" class="my-16 mx-0 p-0 box-border overflow-hidden text-center">
-            <h2 class="my-24 mx-2 no-underline text-black text-4xl font-bold select-none">
+            <h2 class="dark:text-slate-50 my-24 mx-2 no-underline text-black text-4xl font-bold select-none">
                 Mengapa menggunakan Pray.It ?
             </h2>
 
@@ -92,10 +103,10 @@
                         class="featured-image w-9/12 object-cover object-center my-0 mx-auto" />
                 </div>
                 <div id="sec-ket-profit1" class="m-0 py-1 px-7 basis-3/5 box-border overflow-hidden text-left">
-                    <h3 class="mb-1 no-underline text-black text-2xl font-bold">
+                    <h3 class="dark:text-slate-50 mb-1 no-underline text-black text-2xl font-bold">
                         Fleksibel
                     </h3>
-                    <h5 class="mb-7 no-underline text-[#504f4f] text-base font-normal">
+                    <h5 class="dark:text-slate-400 mb-7 no-underline text-[#504f4f] text-base font-normal">
                         Platform ini dapat digunakan dimana saja, mulai dari device laptop
                         ataupun mobile yang memudahkan pengguna untuk mengakses platform.
                     </h5>
@@ -108,10 +119,10 @@
                         class="featured-image w-9/12 object-cover object-center my-0 mx-auto" />
                 </div>
                 <div id="sec-ket-profit2" class="m-0 py-1 px-7 basis-3/5 box-border overflow-hidden text-left">
-                    <h3 class="mb-1 no-underline text-black text-2xl font-bold">
+                    <h3 class="dark:text-slate-50 mb-1 no-underline text-black text-2xl font-bold">
                         Banyak materi, pesan, dan pengetahuan yang dapat dicontoh
                     </h3>
-                    <h5 class="mb-7 no-underline text-[#504f4f] text-base font-normal">
+                    <h5 class="dark:text-slate-400 mb-7 no-underline text-[#504f4f] text-base font-normal">
                         Menyediakan beragam materi mulai dari doa sehari-hari, Al Qur'an
                         dan Hadits, kisah nabi dan juga ceramah.
                     </h5>
@@ -125,10 +136,10 @@
                         class="featured-image w-9/12 object-cover object-center my-0 mx-auto" />
                 </div>
                 <div id="sec-ket-profit3" class="m-0 py-1 px-7 basis-3/5 box-border overflow-hidden text-left">
-                    <h3 class="mb-1 no-underline text-black text-2xl font-bold">
+                    <h3 class="dark:text-slate-50 mb-1 no-underline text-black text-2xl font-bold">
                         Daftar dan mulai
                     </h3>
-                    <h5 class="mb-7 no-underline text-[#504f4f] text-base font-normal">
+                    <h5 class="dark:text-slate-400 mb-7 no-underline text-[#504f4f] text-base font-normal">
                         Dengan hanya mendaftar pengguna langsung dapat mengakses beragam
                         materi dari platform tanpa perlu mengeluarkan biaya sepeserpun.
                     </h5>
@@ -141,10 +152,10 @@
                         class="featured-image w-9/12 object-cover object-center my-0 mx-auto" />
                 </div>
                 <div id="sec-ket-profit4" class="m-0 py-1 px-7 basis-3/5 box-border overflow-hidden text-left">
-                    <h3 class="mb-1 no-underline text-black text-2xl font-bold">
+                    <h3 class="dark:text-slate-50 mb-1 no-underline text-black text-2xl font-bold">
                         Mudah dan sederhana untuk digunakan
                     </h3>
-                    <h5 class="mb-7 no-underline text-[#504f4f] text-base font-normal">
+                    <h5 class="dark:text-slate-400 mb-7 no-underline text-[#504f4f] text-base font-normal">
                         Design yang sederhana dan kompleks dengan pengelompokan fitur yang
                         ada membuat pengguna tidak perlu bingung untuk mencari hal apa
                         yang ingin dipelajari ketika mengakses platform.
@@ -154,12 +165,13 @@
         </div>
 
         <div id="fitur"
-            class="my-16 mx-0 py-24 px-12 box-border overflow-hidden text-center bg-gradient-to-br from-[#343e97] to-[#1100ff] bg-[#2b52fd] flex flex-col">
+            class="dark:bg-section-dark my-16 mx-0 py-24 px-12 box-border overflow-hidden text-center bg-section flex flex-col">
             <h2 class="mt-2 mb-20 mx-2 no-underline text-white text-4xl font-bold basis-full select-none">
                 Fitur
             </h2>
             <article class="basis-full flex flex-row justify-around">
-                <section class="my-0 mx-4 py-2 px-5 basis-3/12 bg-[#2b51fd] shadow-lg shadow-black/[.5] rounded-2xl">
+                <section
+                    class="dark:bg-slate-900 dark:shadow-slate-700 my-0 mx-4 py-2 px-5 basis-3/12 bg-[#2b51fd] shadow-lg shadow-black/[.5] rounded-2xl">
                     <h3 class="mt-7 mb-5 no-underline text-white text-2xl font-bold selection:bg-black">
                         Doa
                     </h3>
@@ -168,7 +180,8 @@
                         meningkatkan taqwa dan memperbaiki diri.
                     </h5>
                 </section>
-                <section class="my-0 mx-4 py-2 px-5 basis-3/12 bg-[#2b51fd] shadow-lg shadow-black/[.5] rounded-2xl">
+                <section
+                    class="dark:bg-slate-900 dark:shadow-slate-700 my-0 mx-4 py-2 px-5 basis-3/12 bg-[#2b51fd] shadow-lg shadow-black/[.5] rounded-2xl">
                     <h3 class="mt-7 mb-5 no-underline text-white text-2xl font-bold selection:bg-black">
                         Al-Qur'an dan hadits
                     </h3>
@@ -178,7 +191,8 @@
                         mempelajari tajwid dalam membaca Al-Qur'an.
                     </h5>
                 </section>
-                <section class="my-0 mx-4 py-2 px-5 basis-3/12 bg-[#2b51fd] shadow-lg shadow-black/[.5] rounded-2xl">
+                <section
+                    class="dark:bg-slate-900 dark:shadow-slate-700 my-0 mx-4 py-2 px-5 basis-3/12 bg-[#2b51fd] shadow-lg shadow-black/[.5] rounded-2xl">
                     <h3 class="mt-7 mb-5 no-underline text-white text-2xl font-bold selection:bg-black">
                         Kisah Nabi
                     </h3>
@@ -188,7 +202,8 @@
                         perilaku yang dicontohkan seperti pada kisah yang ada.
                     </h5>
                 </section>
-                <section class="my-0 mx-4 py-2 px-5 basis-3/12 bg-[#2b51fd] shadow-lg shadow-black/[.5] rounded-2xl">
+                <section
+                    class="dark:bg-slate-900 dark:shadow-slate-700 my-0 mx-4 py-2 px-5 basis-3/12 bg-[#2b51fd] shadow-lg shadow-black/[.5] rounded-2xl">
                     <h3 class="mt-7 mb-5 no-underline text-white text-2xl font-bold selection:bg-black">
                         Ceramah
                     </h3>
@@ -203,12 +218,13 @@
         </div>
 
         <aside id="tentangKami" class="my-5 mx-0 py-12 px-12 box-border overflow-hidden text-center flex flex-col">
-            <h2 class="mt-2 mb-12 mx-2 no-underline text-black text-4xl font-bold basis-full select-none">
+            <h2
+                class="dark:text-slate-50 mt-2 mb-12 mx-2 no-underline text-black text-4xl font-bold basis-full select-none">
                 Tentang Kami
             </h2>
             <article class="flex flex-row justify-center box-border overflow-hidden cursor-pointer">
                 <section
-                    class="m-1 pt-1 pb-2 px-1 basis-1/5 shadow-lg shadow-black/[.5] rounded-xl box-border overflow-hidden">
+                    class="dark:bg-slate-50 m-1 pt-1 pb-2 px-1 basis-1/5 shadow-lg shadow-black/[.5] rounded-xl box-border overflow-hidden">
                     <div class="rounded box-border overflow-hidden">
                         <img src="./assets/profile/me.png" class="featured-profile w-full object-cover object-center"
                             alt="hafidh ahmad fauzan" />
@@ -226,7 +242,7 @@
                     </div>
                 </section>
                 <section
-                    class="m-1 pt-1 pb-2 px-1 basis-1/5 shadow-lg shadow-black/[.5] rounded-xl box-border overflow-hidden">
+                    class="dark:bg-slate-50 m-1 pt-1 pb-2 px-1 basis-1/5 shadow-lg shadow-black/[.5] rounded-xl box-border overflow-hidden">
                     <div class="rounded box-border overflow-hidden">
                         <img src="./assets/profile/me.png" class="featured-profile w-full object-cover object-center"
                             alt="hafidh ahmad fauzan" />
@@ -244,7 +260,7 @@
                     </div>
                 </section>
                 <section
-                    class="m-1 pt-1 pb-2 px-1 basis-1/5 shadow-lg shadow-black/[.5] rounded-xl box-border overflow-hidden">
+                    class="dark:bg-slate-50 m-1 pt-1 pb-2 px-1 basis-1/5 shadow-lg shadow-black/[.5] rounded-xl box-border overflow-hidden">
                     <div class="rounded box-border overflow-hidden">
                         <img src="./assets/profile/me.png" class="featured-profile w-full object-cover object-center"
                             alt="hafidh ahmad fauzan" />
@@ -266,7 +282,7 @@
     </main>
     <footer class="mt-24 mr-0 mb-0 ml-0 p-0 box-border overflow-hidden flex flex-col">
         <div id="kontak"
-            class="top-footer m-0 p-8 box-border overflow-hidden bg-gradient-to-br from-[#343e97] to-[#1100ff] flex flex-row justify-around">
+            class="dark:bg-section-dark top-footer m-0 p-8 box-border overflow-hidden bg-section flex flex-row justify-around">
             <div class="logo-footer my-1 mx-2 py-2 px-5 basis-1/2 box-border overflow-hidden">
                 <div class="img-footer h-16 mb-2">
                     <h1 class="text-4xl leading-[4rem] text-white cursor-default select-none">
@@ -314,7 +330,8 @@
         <div class="bottom-footer m-0 p-2 h-10 box-border overflow-hidden text-center">
             <article class="h-7">
                 <section>
-                    <p class="my-auto mx-0 no-underline text-black text-sm font-normal cursor-default select-none">
+                    <p
+                        class="dark:text-slate-400 my-auto mx-0 no-underline text-black text-sm font-normal cursor-default select-none">
                         Copyright 2022 Our.Faith &#8226; Surabaya &#8226; Hafidh Ahmad
                         Fauzan.
                     </p>
@@ -322,6 +339,19 @@
             </article>
         </div>
     </footer>
+
+    <script>
+        const checkbox = document.querySelector("input[name='toggle']");
+        const html = document.querySelector("html");
+        console.log(checkbox);
+        console.log(html);
+
+        checkbox.addEventListener("click", function () {
+            checkbox.checked
+                ? html.classList.add("dark")
+                : html.classList.remove("dark");
+        });
+    </script>
 </body>
 
 </html>
