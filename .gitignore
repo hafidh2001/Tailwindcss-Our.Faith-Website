@@ -1,0 +1,6 @@
+# config vs code
+/.vscode
+
+# library tailwindcss
+/node_modules
+/public/dist/style.css

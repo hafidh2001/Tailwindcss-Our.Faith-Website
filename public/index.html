@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tailwind-v2 | Config-using-TailwindCLI</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet" />
+
+    <!-- link to tailwindcss -->
+    <link rel="stylesheet" href="./dist/style.css" />
+
+    <style>
+        * {
+            /* border: 1px solid red; */
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="w-full bg-white">
+    <header
+        class="m-0 p-0 w-full h-16 bg-gradient-to-br from-[#343e97] to-[#1100ff] sticky top-0 box-border overflow-hidden flex flex-row justify-between items-center">
+        <div id="logo" class="m-0 py-0 pr-0 pl-24 h-16">
+            <h1 class="text-4xl leading-[4rem] text-white cursor-pointer">
+                Our.Faith
+            </h1>
+        </div>
+        <nav class="my-auto mx-0 py-0 pr-24 p-0 h-16">
+            <ul>
+                <li class="my-0 pr-0 pl-5 leading-[4rem] inline-block cursor-default list-none">
+                    <a href="#beranda"
+                        class="text-base text-white leading-[4rem] hover:text-white-second hover:font-bold">Beranda</a>
+                </li>
+                <li class="my-0 pr-0 pl-5 leading-[4rem] inline-block cursor-default list-none">
+                    <a href="#fitur"
+                        class="text-base text-white-third leading-[4rem] hover:text-white-second hover:font-bold">Fitur</a>
+                </li>
+                <li class="my-0 pr-0 pl-5 leading-[4rem] inline-block cursor-default list-none">
+                    <a href="#tentangKami "
+                        class="text-base text-white-third leading-[4rem] hover:text-white-second hover:font-bold">Tentang
+                        Kami</a>
+                </li>
+                <li class="my-0 pr-0 pl-5 leading-[4rem] inline-block cursor-default list-none">
+                    <a href="#kontak"
+                        class="text-base text-white-third leading-[4rem] hover:text-white-second hover:font-bold">Kontak</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="beranda" class="m-0 p-0 box-border overflow-hidden">
+        <div id="jumbotron"
+            class="mt-0 mb-16 mx-0 p-0 box-border overflow-hidden flex flex-row items-center text-center h-screen bg-cover bg-no-repeat"
+            style="background-image: url('./assets/background/Desktop-1.png')">
+            <div id="sec-img-jumbotron" class="m-0 py-1 px-7 basis-2/5 box-border overflow-hidden text-center">
+                <img src="assets/img/undraw_professor_re_mj1s.svg" alt=""
+                    class="featured-jumbotron w-full object-cover object-center" />
+            </div>
+            <div id="sec-ket-jumbotron" class="m-0 py-1 px-7 basis-3/5 box-border overflow-hidden text-left">
+                <h2 class="mb-1 no-underline text-black text-4xl font-bold">
+                    Perdalam ilmu, kuatkan iman, tingkatkan taqwa
+                </h2>
+                <h4 class="mb-7 no-underline text-[#504f4f] text-xl font-normal">
+                    Solusi untuk diri menuju pribadi yang lebih baik dengan Doa Hafalan,
+                    ayat Al-Qur'an dan Hadits, serta ceramah para ulama.
+                </h4>
+                <div class="btn-header">
+                    <a href="#daftar" class="no-underline"><button id="btn-second"
+                            class="my-0 mx-1 p-0 w-36 h-10 border-none rounded-lg text-base font-bold cursor-pointer bg-btn-second text-[#6e6e6e] hover:bg-btn-second-h hover:text-[#fffdfd]">
+                            Daftar
+                        </button></a>
+                    <a href="#content" class="no-underline"><button id="btn-cta "
+                            class="my-0 mx-1 p-0 w-36 h-10 border-none rounded-lg text-base font-bold cursor-pointer bg-btn-cta text-white hover:bg-btn-cta-h hover:text-[#dadada]">
+                            Mulai Belajar
+                        </button></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="content" class="my-16 mx-0 p-0 box-border overflow-hidden text-center">
+            <h2 class="my-24 mx-2 no-underline text-black text-4xl font-bold">
+                Mengapa menggunakan Pray.It ?
+            </h2>
+
+            <article id="profit1"
+                class="card-right my-2 mx-0 box-border overflow-hidden flex flex-row-reverse items-center">
+                <div id="sec-img-profit1" class="m-0 py-1 px-7 basis-2/5 box-border overflow-hidden text-center">
+                    <img src="assets/img/undraw_mobile_life_re_jtih.svg" alt=""
+                        class="featured-image w-9/12 object-cover object-center my-0 mx-auto" />
+                </div>
+                <div id="sec-ket-profit1" class="m-0 py-1 px-7 basis-3/5 box-border overflow-hidden text-left">
+                    <h3 class="mb-1 no-underline text-black text-2xl font-bold">
+                        Fleksibel
+                    </h3>
+                    <h5 class="mb-7 no-underline text-[#504f4f] text-base font-normal">
+                        Platform ini dapat digunakan dimana saja, mulai dari device laptop
+                        ataupun mobile yang memudahkan pengguna untuk mengakses platform.
+                    </h5>
+                </div>
+            </article>
+
+            <article id="profit2" class="card-left my-2 mx-0 box-border overflow-hidden flex flex-row items-center">
+                <div id="sec-img-profit2" class="m-0 py-1 px-7 basis-2/5 box-border overflow-hidden text-center">
+                    <img src="assets/img/undraw_books_l-33-t.svg" alt=""
+                        class="featured-image w-9/12 object-cover object-center my-0 mx-auto" />
+                </div>
+                <div id="sec-ket-profit2" class="m-0 py-1 px-7 basis-3/5 box-border overflow-hidden text-left">
+                    <h3 class="mb-1 no-underline text-black text-2xl font-bold">
+                        Banyak materi, pesan, dan pengetahuan yang dapat dicontoh
+                    </h3>
+                    <h5 class="mb-7 no-underline text-[#504f4f] text-base font-normal">
+                        Menyediakan beragam materi mulai dari doa sehari-hari, Al Qur'an
+                        dan Hadits, kisah nabi dan juga ceramah.
+                    </h5>
+                </div>
+            </article>
+
+            <article id="profit3"
+                class="card-right my-2 mx-0 box-border overflow-hidden flex flex-row-reverse items-center">
+                <div id="sec-img-profit3" class="m-0 py-1 px-7 basis-2/5 box-border overflow-hidden text-center">
+                    <img src="assets/img/undraw_newspaper_k-72-w.svg" alt=""
+                        class="featured-image w-9/12 object-cover object-center my-0 mx-auto" />
+                </div>
+                <div id="sec-ket-profit3" class="m-0 py-1 px-7 basis-3/5 box-border overflow-hidden text-left">
+                    <h3 class="mb-1 no-underline text-black text-2xl font-bold">
+                        Daftar dan mulai
+                    </h3>
+                    <h5 class="mb-7 no-underline text-[#504f4f] text-base font-normal">
+                        Dengan hanya mendaftar pengguna langsung dapat mengakses beragam
+                        materi dari platform tanpa perlu mengeluarkan biaya sepeserpun.
+                    </h5>
+                </div>
+            </article>
+
+            <article id="profit4" class="card-left my-2 mx-0 box-border overflow-hidden flex flex-row items-center">
+                <div id="sec-img-profit4" class="m-0 py-1 px-7 basis-2/5 box-border overflow-hidden text-center">
+                    <img src="assets/img/undraw_quitting_time_dm-8-t.svg" alt=""
+                        class="featured-image w-9/12 object-cover object-center my-0 mx-auto" />
+                </div>
+                <div id="sec-ket-profit4" class="m-0 py-1 px-7 basis-3/5 box-border overflow-hidden text-left">
+                    <h3 class="mb-1 no-underline text-black text-2xl font-bold">
+                        Mudah dan sederhana untuk digunakan
+                    </h3>
+                    <h5 class="mb-7 no-underline text-[#504f4f] text-base font-normal">
+                        Design yang sederhana dan kompleks dengan pengelompokan fitur yang
+                        ada membuat pengguna tidak perlu bingung untuk mencari hal apa
+                        yang ingin dipelajari ketika mengakses platform.
+                    </h5>
+                </div>
+            </article>
+        </div>
+
+        <div id="fitur"
+            class="my-16 mx-0 py-24 px-12 box-border overflow-hidden text-center bg-gradient-to-br from-[#343e97] to-[#1100ff] bg-[#2b52fd] flex flex-col">
+            <h2 class="mt-2 mb-20 mx-2 no-underline text-white text-4xl font-bold basis-full">
+                Fitur
+            </h2>
+            <article class="basis-full flex flex-row justify-around">
+                <section class="my-0 mx-4 py-2 px-5 basis-3/12 bg-[#2b51fd] shadow-lg shadow-black/[.5] rounded-2xl">
+                    <h3 class="mt-7 mb-5 no-underline text-white text-2xl font-bold">
+                        Doa
+                    </h3>
+                    <h5 class="mb-7 no-underline text-white-third text-base font-normal">
+                        Cari tahu tentang doa-doa sehari-hari untuk langkah awal
+                        meningkatkan taqwa dan memperbaiki diri.
+                    </h5>
+                </section>
+                <section class="my-0 mx-4 py-2 px-5 basis-3/12 bg-[#2b51fd] shadow-lg shadow-black/[.5] rounded-2xl">
+                    <h3 class="mt-7 mb-5 no-underline text-white text-2xl font-bold">
+                        Al-Qur'an dan hadits
+                    </h3>
+                    <h5 class="mb-7 no-underline text-white-third text-base font-normal">
+                        Menyuguhkan tampilan Al-Qur'an beserta terjemahan, serta hadits
+                        shahih. Dilengkapi dengan audio untuk memudahkan para pengguna
+                        mempelajari tajwid dalam membaca Al-Qur'an.
+                    </h5>
+                </section>
+                <section class="my-0 mx-4 py-2 px-5 basis-3/12 bg-[#2b51fd] shadow-lg shadow-black/[.5] rounded-2xl">
+                    <h3 class="mt-7 mb-5 no-underline text-white text-2xl font-bold">
+                        Kisah Nabi
+                    </h3>
+                    <h5 class="mb-7 no-underline text-white-third text-base font-normal">
+                        Terdapat kumpulan kisah Nabi beserta mukjizatnya untuk menambah
+                        wawasan, edukasi dan semoga pembaca dapat mencontoh sifat dan
+                        perilaku yang dicontohkan seperti pada kisah yang ada.
+                    </h5>
+                </section>
+                <section class="my-0 mx-4 py-2 px-5 basis-3/12 bg-[#2b51fd] shadow-lg shadow-black/[.5] rounded-2xl">
+                    <h3 class="mt-7 mb-5 no-underline text-white text-2xl font-bold">
+                        Ceramah
+                    </h3>
+                    <h5 class="mb-7 no-underline text-white-third text-base font-normal">
+                        Ceramah dan pesan dari sumber yang aktual disediakan untuk
+                        memudahkan para pengguna yang memiliki waktu yang padat untuk
+                        tetap dapat mengikuti, mempelajari dan mengambil manfaat dari
+                        pesan-pesan yang disampaikan oleh para penceramah.
+                    </h5>
+                </section>
+            </article>
+        </div>
+
+        <aside id="tentangKami" class="my-5 mx-0 py-12 px-12 box-border overflow-hidden text-center flex flex-col">
+            <h2 class="mt-2 mb-12 mx-2 no-underline text-black text-4xl font-bold basis-full">
+                Tentang Kami
+            </h2>
+            <article class="flex flex-row justify-center box-border overflow-hidden cursor-pointer">
+                <section
+                    class="m-1 pt-1 pb-2 px-1 basis-1/5 shadow-lg shadow-black/[.5] rounded-xl box-border overflow-hidden">
+                    <div class="rounded box-border overflow-hidden">
+                        <img src="./assets/profile/me.png" class="featured-profile w-full object-cover object-center"
+                            alt="hafidh ahmad fauzan" />
+                    </div>
+                    <div class="profile-ket">
+                        <h3 class="mb-1 no-underline text-black text-2xl font-bold">
+                            Hafidh Ahmad Fauzan
+                        </h3>
+                        <h5 class="my-1 mx-auto no-underline text-[#504f4f] text-base font-normal">
+                            Madiun, 08 April 2001
+                        </h5>
+                        <h5 class="my-1 mx-auto no-underline text-[#504f4f] text-base font-normal">
+                            Universitas Negeri Surabaya
+                        </h5>
+                    </div>
+                </section>
+                <section
+                    class="m-1 pt-1 pb-2 px-1 basis-1/5 shadow-lg shadow-black/[.5] rounded-xl box-border overflow-hidden">
+                    <div class="rounded box-border overflow-hidden">
+                        <img src="./assets/profile/me.png" class="featured-profile w-full object-cover object-center"
+                            alt="hafidh ahmad fauzan" />
+                    </div>
+                    <div class="profile-ket">
+                        <h3 class="mb-1 no-underline text-black text-2xl font-bold">
+                            Hafidh Ahmad Fauzan
+                        </h3>
+                        <h5 class="my-1 mx-auto no-underline text-[#504f4f] text-base font-normal">
+                            Madiun, 08 April 2001
+                        </h5>
+                        <h5 class="my-1 mx-auto no-underline text-[#504f4f] text-base font-normal">
+                            Universitas Negeri Surabaya
+                        </h5>
+                    </div>
+                </section>
+                <section
+                    class="m-1 pt-1 pb-2 px-1 basis-1/5 shadow-lg shadow-black/[.5] rounded-xl box-border overflow-hidden">
+                    <div class="rounded box-border overflow-hidden">
+                        <img src="./assets/profile/me.png" class="featured-profile w-full object-cover object-center"
+                            alt="hafidh ahmad fauzan" />
+                    </div>
+                    <div class="profile-ket">
+                        <h3 class="mb-1 no-underline text-black text-2xl font-bold">
+                            Hafidh Ahmad Fauzan
+                        </h3>
+                        <h5 class="my-1 mx-auto no-underline text-[#504f4f] text-base font-normal">
+                            Madiun, 08 April 2001
+                        </h5>
+                        <h5 class="my-1 mx-auto no-underline text-[#504f4f] text-base font-normal">
+                            Universitas Negeri Surabaya
+                        </h5>
+                    </div>
+                </section>
+            </article>
+        </aside>
+    </main>
+    <footer class="mt-24 mr-0 mb-0 ml-0 p-0 box-border overflow-hidden flex flex-col">
+        <div id="kontak"
+            class="top-footer m-0 p-8 box-border overflow-hidden bg-gradient-to-br from-[#343e97] to-[#1100ff] flex flex-row justify-around">
+            <div class="logo-footer my-1 mx-2 py-2 px-5 basis-1/2 box-border overflow-hidden">
+                <div class="img-footer h-16 mb-2">
+                    <h1 class="text-4xl leading-[4rem] text-white cursor-default">
+                        Our.Faith
+                    </h1>
+                </div>
+                <p class="no-underline text-white-third text-sm font-normal cursor-default">
+                    Our.Faith adalah platform tentang informasi dan edukasi terkait
+                    agama Islam yang dikembangkan untuk media dakwah online di era
+                    modern seperti saat ini.
+                </p>
+            </div>
+            <div class="informasi my-1 mx-2 py-2 px-5 basis-1/4 box-border overflow-hidden">
+                <h3 class="mt-4 mb-7 no-underline text-2xl font-bold text-white cursor-default">
+                    Informasi
+                </h3>
+                <h5 class="my-3 mx-0 text-base font-normal">
+                    <a href="#" class="no-underline text-white-third hover:text-white">Cara penggunaan</a>
+                </h5>
+                <h5 class="my-3 mx-0 text-base font-normal">
+                    <a href="#" class="no-underline text-white-third hover:text-white">Pusat bantuan</a>
+                </h5>
+                <h5 class="my-3 mx-0 text-base font-normal">
+                    <a href="#" class="no-underline text-white-third hover:text-white">Tentang Kami</a>
+                </h5>
+            </div>
+            <div class="terhubung my-1 mx-2 py-2 px-5 basis-1/4 box-border overflow-hidden">
+                <h3 class="mt-4 mb-7 no-underline text-2xl font-bold text-white cursor-default">
+                    Terhubung
+                </h3>
+                <h5 class="my-3 mx-0 text-base font-normal">
+                    <a href="#" class="no-underline text-white-third hover:text-white">Madiun</a>
+                </h5>
+                <h5 class="my-3 mx-0 text-base font-normal">
+                    <a href="#" class="no-underline text-white-third hover:text-white">Indonesia</a>
+                </h5>
+                <h5 class="my-3 mx-0 text-base font-normal">
+                    <a href="#" class="no-underline text-white-third hover:text-white">0896-000-000-00</a>
+                </h5>
+                <h5 class="my-3 mx-0 text-base font-normal">
+                    <a href="#" class="no-underline text-white-third hover:text-white">hafidhfauzan2@gmail.com</a>
+                </h5>
+            </div>
+        </div>
+        <div class="bottom-footer m-0 p-2 h-10 box-border overflow-hidden text-center">
+            <article class="h-7">
+                <section>
+                    <p class="my-auto mx-0 no-underline text-black text-sm font-normal cursor-default">
+                        Copyright 2022 Our.Faith &#8226; Surabaya &#8226; Hafidh Ahmad
+                        Fauzan.
+                    </p>
+                </section>
+            </article>
+        </div>
+    </footer>
+</body>
+
+</html>
