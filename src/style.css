@@ -19,7 +19,36 @@
   button {
     @apply font-content;
   }
+}
 
+@layer components {
+  .nav-li {
+    @apply my-0 pr-0 pl-5 leading-[4rem] inline-block cursor-default list-none;
+  }
+  .nav-a {
+    @apply text-base leading-[4rem] hover:text-white-second hover:font-bold;
+  }
+  .btn-jumbotron {
+    @apply my-0 mx-1 p-0 w-36 h-10 border-none rounded-lg text-base font-bold cursor-pointer;
+  }
+  .card-profit {
+    @apply my-2 mx-0 box-border overflow-hidden flex items-center;
+  }
+  .sec-img-profit {
+    @apply m-0 py-1 px-7 basis-2/5 box-border overflow-hidden text-center;
+  }
+  .sec-ket-profit {
+    @apply m-0 py-1 px-7 basis-3/5 box-border overflow-hidden text-left;
+  }
+  .sec-fitur {
+    @apply my-0 mx-4 py-2 px-5 basis-3/12 bg-[#2b51fd] shadow-lg shadow-black/[.5] rounded-2xl;
+  }
+  .sec-tentangKami {
+    @apply m-1 pt-1 pb-2 px-1 basis-1/5 shadow-lg shadow-black/[.5] rounded-xl box-border overflow-hidden;
+  }
+}
+
+@layer utilities {
   #toogle:checked ~ label div#toggle-circle {
     @apply translate-x-4;
   }

@@ -31,24 +31,20 @@
         </div>
         <nav class="my-auto mx-0 py-0 pr-24 pl-0 h-16">
             <ul>
-                <li class="my-0 pr-0 pl-5 leading-[4rem] inline-block cursor-default list-none">
-                    <a href="#beranda"
-                        class="text-base text-white leading-[4rem] hover:text-white-second hover:font-bold">Beranda</a>
+                <li class="nav-li">
+                    <a href="#beranda" class="nav-a text-white">Beranda</a>
                 </li>
-                <li class="my-0 pr-0 pl-5 leading-[4rem] inline-block cursor-default list-none">
-                    <a href="#fitur"
-                        class="text-base text-white-third leading-[4rem] hover:text-white-second hover:font-bold">Fitur</a>
+                <li class="nav-li">
+                    <a href="#fitur" class="nav-a text-white-third">Fitur</a>
                 </li>
-                <li class="my-0 pr-0 pl-5 leading-[4rem] inline-block cursor-default list-none">
-                    <a href="#tentangKami "
-                        class="text-base text-white-third leading-[4rem] hover:text-white-second hover:font-bold">Tentang
+                <li class="nav-li">
+                    <a href="#tentangKami " class="nav-a text-white-third">Tentang
                         Kami</a>
                 </li>
-                <li class="my-0 pr-0 pl-5 leading-[4rem] inline-block cursor-default list-none">
-                    <a href="#kontak"
-                        class="text-base text-white-third leading-[4rem] hover:text-white-second hover:font-bold">Kontak</a>
+                <li class="nav-li">
+                    <a href="#kontak" class="nav-a text-white-third">Kontak</a>
                 </li>
-                <li class="my-0 pr-0 pl-5 leading-[4rem] inline-block cursor-default list-none">
+                <li class="nav-li">
                     <div class="flex justify-center">
                         <span class="text-sm text-slate-50">Light</span>
                         <input type="checkbox" id="toogle" name="toggle" class="hidden" />
@@ -66,11 +62,11 @@
         <div id="jumbotron"
             class="mt-0 mb-16 mx-0 p-0 box-border overflow-hidden flex flex-row items-center text-center h-screen bg-cover bg-no-repeat"
             style="background-image: url('./assets/background/Desktop-1.png')">
-            <div id="sec-img-jumbotron" class="m-0 py-1 px-7 basis-2/5 box-border overflow-hidden text-center">
+            <div id="sec-img-jumbotron" class=".sec-img-profit">
                 <img src="assets/img/undraw_professor_re_mj1s.svg" alt=""
                     class="featured-jumbotron w-full object-cover object-center" />
             </div>
-            <div id="sec-ket-jumbotron" class="m-0 py-1 px-7 basis-3/5 box-border overflow-hidden text-left">
+            <div id="sec-ket-jumbotron" class="sec-ket-profit">
                 <h2 class="dark:text-slate-50 mb-1 no-underline text-black text-4xl font-bold">
                     Perdalam ilmu, kuatkan iman, tingkatkan taqwa
                 </h2>
@@ -80,29 +76,28 @@
                 </h4>
                 <div class="btn-header">
                     <a href="#daftar" class="no-underline"><button id="btn-second"
-                            class="my-0 mx-1 p-0 w-36 h-10 border-none rounded-lg text-base font-bold cursor-pointer bg-btn-second text-[#6e6e6e] hover:bg-btn-second-h hover:text-[#fffdfd]">
+                            class="btn-jumbotron bg-btn-second text-[#6e6e6e] hover:bg-btn-second-h hover:text-[#fffdfd]">
                             Daftar
                         </button></a>
                     <a href="#content" class="no-underline"><button id="btn-cta "
-                            class="my-0 mx-1 p-0 w-36 h-10 border-none rounded-lg text-base font-bold cursor-pointer bg-btn-cta text-white hover:bg-btn-cta-h hover:text-[#dadada]">
+                            class="btn-jumbotron bg-btn-cta text-white hover:bg-btn-cta-h hover:text-[#dadada]">
                             Mulai Belajar
                         </button></a>
                 </div>
             </div>
         </div>
 
-        <div id="content" class="my-16 mx-0 p-0 box-border overflow-hidden text-center">
+        <div id="profit" class="my-16 mx-0 p-0 box-border overflow-hidden text-center">
             <h2 class="dark:text-slate-50 my-24 mx-2 no-underline text-black text-4xl font-bold select-none">
                 Mengapa menggunakan Pray.It ?
             </h2>
 
-            <article id="profit1"
-                class="card-right my-2 mx-0 box-border overflow-hidden flex flex-row-reverse items-center">
-                <div id="sec-img-profit1" class="m-0 py-1 px-7 basis-2/5 box-border overflow-hidden text-center">
+            <article class="card-profit flex-row-reverse">
+                <div id="sec-img-profit1" class="sec-img-profit">
                     <img src="assets/img/undraw_mobile_life_re_jtih.svg" alt=""
                         class="featured-image w-9/12 object-cover object-center my-0 mx-auto" />
                 </div>
-                <div id="sec-ket-profit1" class="m-0 py-1 px-7 basis-3/5 box-border overflow-hidden text-left">
+                <div class="sec-ket-profit">
                     <h3 class="dark:text-slate-50 mb-1 no-underline text-black text-2xl font-bold">
                         Fleksibel
                     </h3>
@@ -113,12 +108,12 @@
                 </div>
             </article>
 
-            <article id="profit2" class="card-left my-2 mx-0 box-border overflow-hidden flex flex-row items-center">
-                <div id="sec-img-profit2" class="m-0 py-1 px-7 basis-2/5 box-border overflow-hidden text-center">
+            <article class="card-profit flex-row">
+                <div id="sec-img-profit2" class=".sec-img-profit">
                     <img src="assets/img/undraw_books_l-33-t.svg" alt=""
                         class="featured-image w-9/12 object-cover object-center my-0 mx-auto" />
                 </div>
-                <div id="sec-ket-profit2" class="m-0 py-1 px-7 basis-3/5 box-border overflow-hidden text-left">
+                <div id="sec-ket-profit2" class="sec-ket-profit">
                     <h3 class="dark:text-slate-50 mb-1 no-underline text-black text-2xl font-bold">
                         Banyak materi, pesan, dan pengetahuan yang dapat dicontoh
                     </h3>
@@ -129,13 +124,12 @@
                 </div>
             </article>
 
-            <article id="profit3"
-                class="card-right my-2 mx-0 box-border overflow-hidden flex flex-row-reverse items-center">
-                <div id="sec-img-profit3" class="m-0 py-1 px-7 basis-2/5 box-border overflow-hidden text-center">
+            <article class="card-profit flex-row-reverse">
+                <div id="sec-img-profit3" class=".sec-img-profit">
                     <img src="assets/img/undraw_newspaper_k-72-w.svg" alt=""
                         class="featured-image w-9/12 object-cover object-center my-0 mx-auto" />
                 </div>
-                <div id="sec-ket-profit3" class="m-0 py-1 px-7 basis-3/5 box-border overflow-hidden text-left">
+                <div id="sec-ket-profit3" class="sec-ket-profit">
                     <h3 class="dark:text-slate-50 mb-1 no-underline text-black text-2xl font-bold">
                         Daftar dan mulai
                     </h3>
@@ -146,12 +140,12 @@
                 </div>
             </article>
 
-            <article id="profit4" class="card-left my-2 mx-0 box-border overflow-hidden flex flex-row items-center">
-                <div id="sec-img-profit4" class="m-0 py-1 px-7 basis-2/5 box-border overflow-hidden text-center">
+            <article class="card-profit flex-row">
+                <div id="sec-img-profit4" class=".sec-img-profit">
                     <img src="assets/img/undraw_quitting_time_dm-8-t.svg" alt=""
                         class="featured-image w-9/12 object-cover object-center my-0 mx-auto" />
                 </div>
-                <div id="sec-ket-profit4" class="m-0 py-1 px-7 basis-3/5 box-border overflow-hidden text-left">
+                <div id="sec-ket-profit4" class="sec-ket-profit">
                     <h3 class="dark:text-slate-50 mb-1 no-underline text-black text-2xl font-bold">
                         Mudah dan sederhana untuk digunakan
                     </h3>
@@ -170,8 +164,7 @@
                 Fitur
             </h2>
             <article class="basis-full flex flex-row justify-around">
-                <section
-                    class="dark:bg-slate-900 dark:shadow-slate-700 my-0 mx-4 py-2 px-5 basis-3/12 bg-[#2b51fd] shadow-lg shadow-black/[.5] rounded-2xl">
+                <section class="dark:bg-slate-900 dark:shadow-slate-700 sec-fitur">
                     <h3 class="mt-7 mb-5 no-underline text-white text-2xl font-bold selection:bg-black">
                         Doa
                     </h3>
@@ -180,8 +173,7 @@
                         meningkatkan taqwa dan memperbaiki diri.
                     </h5>
                 </section>
-                <section
-                    class="dark:bg-slate-900 dark:shadow-slate-700 my-0 mx-4 py-2 px-5 basis-3/12 bg-[#2b51fd] shadow-lg shadow-black/[.5] rounded-2xl">
+                <section class="dark:bg-slate-900 dark:shadow-slate-700 sec-fitur">
                     <h3 class="mt-7 mb-5 no-underline text-white text-2xl font-bold selection:bg-black">
                         Al-Qur'an dan hadits
                     </h3>
@@ -191,8 +183,7 @@
                         mempelajari tajwid dalam membaca Al-Qur'an.
                     </h5>
                 </section>
-                <section
-                    class="dark:bg-slate-900 dark:shadow-slate-700 my-0 mx-4 py-2 px-5 basis-3/12 bg-[#2b51fd] shadow-lg shadow-black/[.5] rounded-2xl">
+                <section class="dark:bg-slate-900 dark:shadow-slate-700 sec-fitur">
                     <h3 class="mt-7 mb-5 no-underline text-white text-2xl font-bold selection:bg-black">
                         Kisah Nabi
                     </h3>
@@ -202,8 +193,7 @@
                         perilaku yang dicontohkan seperti pada kisah yang ada.
                     </h5>
                 </section>
-                <section
-                    class="dark:bg-slate-900 dark:shadow-slate-700 my-0 mx-4 py-2 px-5 basis-3/12 bg-[#2b51fd] shadow-lg shadow-black/[.5] rounded-2xl">
+                <section class="dark:bg-slate-900 dark:shadow-slate-700 sec-fitur">
                     <h3 class="mt-7 mb-5 no-underline text-white text-2xl font-bold selection:bg-black">
                         Ceramah
                     </h3>
@@ -223,8 +213,7 @@
                 Tentang Kami
             </h2>
             <article class="flex flex-row justify-center box-border overflow-hidden cursor-pointer">
-                <section
-                    class="dark:bg-slate-50 m-1 pt-1 pb-2 px-1 basis-1/5 shadow-lg shadow-black/[.5] rounded-xl box-border overflow-hidden">
+                <section class="dark:bg-slate-50 sec-tentangKami">
                     <div class="rounded box-border overflow-hidden">
                         <img src="./assets/profile/me.png" class="featured-profile w-full object-cover object-center"
                             alt="hafidh ahmad fauzan" />
@@ -241,8 +230,7 @@
                         </h5>
                     </div>
                 </section>
-                <section
-                    class="dark:bg-slate-50 m-1 pt-1 pb-2 px-1 basis-1/5 shadow-lg shadow-black/[.5] rounded-xl box-border overflow-hidden">
+                <section class="dark:bg-slate-50 sec-tentangKami">
                     <div class="rounded box-border overflow-hidden">
                         <img src="./assets/profile/me.png" class="featured-profile w-full object-cover object-center"
                             alt="hafidh ahmad fauzan" />
@@ -259,8 +247,7 @@
                         </h5>
                     </div>
                 </section>
-                <section
-                    class="dark:bg-slate-50 m-1 pt-1 pb-2 px-1 basis-1/5 shadow-lg shadow-black/[.5] rounded-xl box-border overflow-hidden">
+                <section class="dark:bg-slate-50 sec-tentangKami">
                     <div class="rounded box-border overflow-hidden">
                         <img src="./assets/profile/me.png" class="featured-profile w-full object-cover object-center"
                             alt="hafidh ahmad fauzan" />
